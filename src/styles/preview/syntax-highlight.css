@@ -1,0 +1,218 @@
+/* 代码高亮样式 */
+.preview-style-github .hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #f6f8fa;
+    color: #24292e;
+}
+
+.preview-style-github.dark-theme .hljs {
+    background: #161b22;
+    color: #c9d1d9;
+}
+
+.hljs-comment,
+.hljs-quote {
+    color: #6a737d;
+    font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type {
+    color: #d73a49;
+}
+
+.hljs-string,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-attribute,
+.hljs-variable {
+    color: #032f62;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-meta .hljs-meta-string {
+    color: #005cc5;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+    color: #6f42c1;
+}
+
+.hljs-function .hljs-title,
+.hljs-title.function_ {
+    color: #005cc5;
+}
+
+.hljs-attr {
+    color: #005cc5;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+    color: #005cc5;
+}
+
+/* 暗色主题代码高亮 */
+.preview-style-github.dark-theme .hljs-comment,
+.preview-style-github.dark-theme .hljs-quote {
+    color: #8b949e;
+}
+
+.preview-style-github.dark-theme .hljs-keyword,
+.preview-style-github.dark-theme .hljs-selector-tag,
+.preview-style-github.dark-theme .hljs-type {
+    color: #ff7b72;
+}
+
+.preview-style-github.dark-theme .hljs-string,
+.preview-style-github.dark-theme .hljs-selector-attr,
+.preview-style-github.dark-theme .hljs-selector-pseudo,
+.preview-style-github.dark-theme .hljs-attribute,
+.preview-style-github.dark-theme .hljs-variable {
+    color: #a5d6ff;
+}
+
+.preview-style-github.dark-theme .hljs-number,
+.preview-style-github.dark-theme .hljs-literal,
+.preview-style-github.dark-theme .hljs-meta .hljs-meta-string {
+    color: #79c0ff;
+}
+
+.preview-style-github.dark-theme .hljs-number,
+.preview-style-github.dark-theme .hljs-literal,
+.preview-style-github.dark-theme .hljs-meta .hljs-meta-string {
+    color: #79c0ff;
+}
+
+.preview-style-github.dark-theme .hljs-built_in,
+.preview-style-github.dark-theme .hljs-class .hljs-title {
+    color: #d2a8ff;
+}
+
+.preview-style-github.dark-theme .hljs-function .hljs-title,
+.preview-style-github.dark-theme .hljs-title.function_ {
+    color: #79c0ff;
+}
+
+.preview-style-github.dark-theme .hljs-attr {
+    color: #79c0ff;
+}
+
+.preview-style-github.dark-theme .hljs-symbol,
+.preview-style-github.dark-theme .hljs-bullet,
+.preview-style-github.dark-theme .hljs-link {
+    color: #79c0ff;
+}
+
+/* 简约风格代码高亮 */
+.preview-style-minimal .hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #f8f9fa;
+    color: #2c3e50;
+    border-radius: 4px;
+}
+
+.preview-style-minimal.dark-theme .hljs {
+    background: #34495e;
+    color: #ecf0f1;
+}
+
+.preview-style-minimal .hljs-comment,
+.preview-style-minimal .hljs-quote {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.preview-style-minimal .hljs-keyword,
+.preview-style-minimal .hljs-selector-tag,
+.preview-style-minimal .hljs-type {
+    color: #e74c3c;
+}
+
+.preview-style-minimal .hljs-string,
+.preview-style-minimal .hljs-selector-attr,
+.preview-style-minimal .hljs-selector-pseudo,
+.preview-style-minimal .hljs-attribute,
+.preview-style-minimal .hljs-variable {
+    color: #27ae60;
+}
+
+.preview-style-minimal .hljs-number,
+.preview-style-minimal .hljs-literal,
+.preview-style-minimal .hljs-meta .hljs-meta-string {
+    color: #f39c12;
+}
+
+.preview-style-minimal .hljs-built_in,
+.preview-style-minimal .hljs-class .hljs-title {
+    color: #8e44ad;
+}
+
+.preview-style-minimal .hljs-function .hljs-title,
+.preview-style-minimal .hljs-title.function_ {
+    color: #2980b9;
+}
+
+.preview-style-minimal .hljs-attr {
+    color: #2980b9;
+}
+
+.preview-style-minimal .hljs-symbol,
+.preview-style-minimal .hljs-bullet,
+.preview-style-minimal .hljs-link {
+    color: #2980b9;
+}
+
+/* 简约风格暗色主题代码高亮 */
+.preview-style-minimal.dark-theme .hljs-comment,
+.preview-style-minimal.dark-theme .hljs-quote {
+    color: #95a5a6;
+}
+
+.preview-style-minimal.dark-theme .hljs-keyword,
+.preview-style-minimal.dark-theme .hljs-selector-tag,
+.preview-style-minimal.dark-theme .hljs-type {
+    color: #e74c3c;
+}
+
+.preview-style-minimal.dark-theme .hljs-string,
+.preview-style-minimal.dark-theme .hljs-selector-attr,
+.preview-style-minimal.dark-theme .hljs-selector-pseudo,
+.preview-style-minimal.dark-theme .hljs-attribute,
+.preview-style-minimal.dark-theme .hljs-variable {
+    color: #2ecc71;
+}
+
+.preview-style-minimal.dark-theme .hljs-number,
+.preview-style-minimal.dark-theme .hljs-literal,
+.preview-style-minimal.dark-theme .hljs-meta .hljs-meta-string {
+    color: #f39c12;
+}
+
+.preview-style-minimal.dark-theme .hljs-built_in,
+.preview-style-minimal.dark-theme .hljs-class .hljs-title {
+    color: #9b59b6;
+}
+
+.preview-style-minimal.dark-theme .hljs-function .hljs-title,
+.preview-style-minimal.dark-theme .hljs-title.function_ {
+    color: #3498db;
+}
+
+.preview-style-minimal.dark-theme .hljs-attr {
+    color: #3498db;
+}
+
+.preview-style-minimal.dark-theme .hljs-symbol,
+.preview-style-minimal.dark-theme .hljs-bullet,
+.preview-style-minimal.dark-theme .hljs-link {
+    color: #3498db;
+}

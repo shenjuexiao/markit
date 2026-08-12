@@ -1,0 +1,231 @@
+/* GitHub Markdown样式 */
+.preview-style-github .markdown-body {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    color: #24292f;
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.markdown-body h1 {
+    margin: 0.67em 0;
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    font-size: 2em;
+    border-bottom: 1px solid hsla(210, 18%, 87%, 1);
+}
+
+.markdown-body h2 {
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    border-bottom: 1px solid hsla(210, 18%, 87%, 1);
+}
+
+.markdown-body h3 {
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.markdown-body h4 {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.markdown-body h5 {
+    font-weight: 600;
+    font-size: 0.875em;
+}
+
+.markdown-body h6 {
+    font-weight: 600;
+    font-size: 0.85em;
+    color: #656d76;
+}
+
+.markdown-body p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+    margin: 0;
+    padding: 0 1em;
+    color: #656d76;
+    border-left: 0.25em solid #d0d7de;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-left: 2em;
+}
+
+.markdown-body li + li {
+    margin-top: 0.25em;
+}
+
+.markdown-body code,
+.markdown-body tt {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(175, 184, 193, 0.2);
+    border-radius: 6px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas,
+        "Liberation Mono", Menlo, monospace;
+}
+
+.markdown-body pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas,
+        "Liberation Mono", Menlo, monospace;
+}
+
+.markdown-body pre code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+}
+
+.markdown-body table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    overflow: auto;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+    padding: 6px 13px;
+    border: 1px solid #d0d7de;
+}
+
+.markdown-body table th {
+    font-weight: 600;
+}
+
+.markdown-body table tr {
+    background-color: #ffffff;
+    border-top: 1px solid hsla(210, 18%, 87%, 1);
+}
+
+.markdown-body table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+
+.markdown-body a {
+    background-color: transparent;
+    color: #0969da;
+    text-decoration: none;
+}
+
+.markdown-body a:hover {
+    text-decoration: underline;
+}
+
+.markdown-body hr {
+    box-sizing: content-box;
+    overflow: hidden;
+    background: transparent;
+    border-bottom: 1px solid hsla(210, 18%, 87%, 1);
+    height: 0.25em;
+    padding: 0;
+    margin: 24px 0;
+    background-color: #d0d7de;
+    border: 0;
+}
+
+.markdown-body img {
+    border-style: none;
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: #ffffff;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* 暗色主题 */
+.preview-style-github.dark-theme .markdown-body {
+    color: #c9d1d9;
+    background-color: #0d1117;
+}
+
+.preview-style-github.dark-theme .markdown-body h1,
+.preview-style-github.dark-theme .markdown-body h2 {
+    border-bottom-color: #21262d;
+}
+
+.preview-style-github.dark-theme .markdown-body h6 {
+    color: #8b949e;
+}
+
+.preview-style-github.dark-theme .markdown-body hr {
+    background-color: #21262d;
+}
+
+.preview-style-github.dark-theme .markdown-body blockquote {
+    color: #8b949e;
+    border-left-color: #3b434b;
+}
+
+.preview-style-github.dark-theme .markdown-body table th,
+.preview-style-github.dark-theme .markdown-body table td {
+    border-color: #3b434b;
+}
+
+.preview-style-github.dark-theme .markdown-body table tr {
+    background-color: #0d1117;
+    border-top-color: #21262d;
+}
+
+.preview-style-github.dark-theme .markdown-body table tr:nth-child(2n) {
+    background-color: #161b22;
+}
+
+.preview-style-github.dark-theme .markdown-body code,
+.preview-style-github.dark-theme .markdown-body tt {
+    background-color: rgba(110, 118, 129, 0.4);
+}
+
+.preview-style-github.dark-theme .markdown-body pre {
+    background-color: #161b22;
+}
+
+.preview-style-github.dark-theme .markdown-body a {
+    color: #58a6ff;
+}

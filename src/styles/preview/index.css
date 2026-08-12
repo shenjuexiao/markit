@@ -1,0 +1,86 @@
+/* 预览样式索引文件 */
+/* 导入所有预览相关的样式 */
+
+/* GitHub风格预览样式 */
+@import "./github.css";
+
+/* 简约风格预览样式 */
+@import "./minimal.css";
+
+/* 通用预览样式 */
+.preview-container {
+    height: 100%;
+    overflow: auto;
+}
+
+.preview-container.dark-theme {
+    background: #2d2d2d;
+}
+
+.preview-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100%;
+}
+
+.preview-content.dark-theme {
+    background: #1a1a1a;
+    color: #e0e0e0;
+}
+
+/* Mermaid图表样式 */
+.mermaid-chart {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.mermaid-chart svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 暗色主题下的mermaid图表样式调整 */
+.dark-theme .mermaid-chart svg {
+    filter: invert(0.9) hue-rotate(180deg);
+}
+
+/* LaTeX公式样式 */
+.math-block {
+    text-align: center;
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.math-block .katex {
+    font-size: 1.1em;
+}
+
+/* 行内LaTeX公式居中 */
+.katex {
+    text-align: center;
+}
+
+/* 图片居中显示 */
+.markdown-body img {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 暗色主题下的LaTeX公式样式调整 */
+.dark-theme .math-block .katex {
+    color: #e0e0e0;
+}
+
+.dark-theme .math-block .katex .base {
+    color: #e0e0e0;
+}
+
+/* 暗色主题下的图片样式调整 */
+.dark-theme .markdown-body img {
+    filter: brightness(0.9);
+}

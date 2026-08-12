@@ -1,0 +1,302 @@
+/* 导入预览样式 */
+@import "./styles/preview/index.css";
+/* 代码高亮样式 */
+@import "./styles/preview/syntax-highlight.css";
+/* 移动端适配样式 */
+@import "./styles/mobile.css";
+
+/* Reset和基础样式 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        sans-serif;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* 品牌Footer样式 */
+.brand-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin: 1rem auto -1rem auto;
+    padding: 0.8rem !important;
+}
+
+.brand-footer img {
+    margin: 0 !important;
+    background-color: transparent !important;
+}
+
+.brand-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-size: 0.5rem;
+    font-weight: 500;
+    color: #666;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.brand-footer.dark-theme .brand-name {
+    color: #aaa;
+}
+
+/* 移动端适配样式 */
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    #app {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    /* 移动端侧边栏样式 */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 1000;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .sidebar.visible {
+        transform: translateX(0);
+    }
+    
+    .sidebar.hidden {
+        transform: translateX(-100%);
+    }
+    
+    /* 移动端主内容区域 */
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    /* 移动端工具栏 */
+    .toolbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+    }
+    
+    .toolbar-actions {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+    
+    .toolbar-actions button {
+        min-width: 80px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    /* 移动端预览风格选择器 */
+    .preview-style-selector {
+        width: 100%;
+        margin-top: 8px;
+    }
+    
+    .style-select {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    /* 移动端GitHub操作按钮 */
+    .github-actions {
+        width: 100%;
+        display: flex;
+        gap: 8px;
+        margin-top: 8px;
+    }
+    
+    .github-actions button {
+        flex: 1;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    /* 移动端编辑器 */
+    .editor-container {
+        padding: 12px;
+    }
+    
+    .editor-container textarea {
+        font-size: 16px; /* 防止iOS缩放 */
+        line-height: 1.6;
+        padding: 12px;
+    }
+    
+    /* 移动端预览区域 */
+    .preview-container {
+        padding: 12px;
+    }
+    
+    .preview-content {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    /* 移动端状态栏 */
+    .status-bar {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    /* 移动端设置弹窗 */
+    .settings-modal {
+        width: 95%;
+        max-width: 400px;
+        margin: 20px auto;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .settings-content {
+        padding: 16px;
+    }
+    
+    /* 移动端加载组件 */
+    .loading-overlay {
+        padding: 20px;
+    }
+    
+    .loading-content {
+        padding: 16px;
+        min-width: 280px;
+    }
+}
+
+/* 平板端适配样式 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .sidebar {
+        width: 220px;
+    }
+    
+    .toolbar-actions {
+        gap: 10px;
+    }
+    
+    .toolbar-actions button {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
+
+/* 超小屏幕适配 */
+@media (max-width: 480px) {
+    .toolbar {
+        padding: 8px;
+    }
+    
+    .toolbar-actions {
+        gap: 6px;
+    }
+    
+    .toolbar-actions button {
+        min-width: 70px;
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+    
+    .editor-container,
+    .preview-container {
+        padding: 8px;
+    }
+    
+    .sidebar-header {
+        padding: 12px;
+    }
+    
+    .sidebar-header h2 {
+        font-size: 14px;
+    }
+    
+    .file-item {
+        padding: 8px 12px;
+    }
+    
+    .file-name {
+        font-size: 13px;
+    }
+}
+
+/* 横屏模式适配 */
+@media (max-height: 500px) and (orientation: landscape) {
+    .sidebar {
+        height: 100vh;
+        overflow-y: auto;
+    }
+    
+    .toolbar {
+        padding: 8px 12px;
+    }
+    
+    .toolbar-actions {
+        gap: 6px;
+    }
+    
+    .toolbar-actions button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+/* 触摸设备优化 */
+@media (hover: none) and (pointer: coarse) {
+    .file-item,
+    .toolbar-actions button,
+    .sidebar-actions button,
+    .settings-btn {
+        min-height: 44px; /* iOS推荐的最小触摸目标 */
+    }
+    
+    .delete-btn {
+        min-height: 32px;
+        min-width: 32px;
+    }
+    
+    /* 增加触摸反馈 */
+    .file-item:active,
+    .toolbar-actions button:active,
+    .sidebar-actions button:active,
+    .settings-btn:active {
+        opacity: 0.7;
+        transform: scale(0.98);
+    }
+}
+
+/* 高DPI屏幕优化 */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .sidebar {
+        border-right-width: 0.5px;
+    }
+    
+    .file-item {
+        border-bottom-width: 0.5px;
+    }
+}
